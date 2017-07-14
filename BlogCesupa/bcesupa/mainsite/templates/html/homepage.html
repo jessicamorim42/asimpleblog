@@ -1,22 +1,36 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <div class="row">   
-        <h3 class="page-header">Lorem ipsum</h3>
-        <p class="text-justify"> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus ac nunc vitae posuere. 
-            Donec vel diam sed mi maximus placerat nec eget ligula. Ut ac tortor feugiat metus vehicula lobortis ut nec urna. 
-            Donec non tempor nisi. Ut quis augue non lectus elementum elementum. Cras vel finibus felis, nec molestie dui. 
-            Vestibulum interdum pellentesque nunc, dictum rutrum odio rutrum nec. Nullam mattis est sed condimentum mollis. 
-            Ut id ex in libero convallis fringilla ut a arcu. Phasellus eget quam in augue elementum sagittis consequat quis nibh.
-        </p>  
-        <p class="text-justify"> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus ac nunc vitae posuere. 
-            Donec vel diam sed mi maximus placerat nec eget ligula. Ut ac tortor feugiat metus vehicula lobortis ut nec urna. 
-            Donec non tempor nisi. Ut quis augue non lectus elementum elementum. Cras vel finibus felis, nec molestie dui. 
-            Vestibulum interdum pellentesque nunc, dictum rutrum odio rutrum nec. Nullam mattis est sed condimentum mollis. 
-            Ut id ex in libero convallis fringilla ut a arcu. Phasellus eget quam in augue elementum sagittis consequat quis nibh.
-        </p>   
-    </div>
+
+<div id="main" class="container container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="page-header">Lorem ipsum</h3>
+            <p class="text-justify"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus ac nunc vitae posuere. 
+                Donec vel diam sed mi maximus placerat nec eget ligula. Ut ac tortor feugiat metus vehicula lobortis ut nec urna. 
+                Donec non tempor nisi. Ut quis augue non lectus elementum elementum. Cras vel finibus felis, nec molestie dui. 
+                Vestibulum interdum pellentesque nunc, dictum rutrum odio rutrum nec. Nullam mattis est sed condimentum mollis. 
+                Ut id ex in libero convallis fringilla ut a arcu. Phasellus eget quam in augue elementum sagittis consequat quis nibh.
+            </p>  
+            <p class="text-justify"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus ac nunc vitae posuere. 
+                Donec vel diam sed mi maximus placerat nec eget ligula. Ut ac tortor feugiat metus vehicula lobortis ut nec urna. 
+                Donec non tempor nisi. Ut quis augue non lectus elementum elementum. Cras vel finibus felis, nec molestie dui. 
+                Vestibulum interdum pellentesque nunc, dictum rutrum odio rutrum nec. Nullam mattis est sed condimentum mollis. 
+                Ut id ex in libero convallis fringilla ut a arcu. Phasellus eget quam in augue elementum sagittis consequat quis nibh.
+            </p>   
+        </div>
+        <div class="col-md-4">
+             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id="posts">
+                <li class="text-center"><h3>Recentes</h3></li>
+                <li><a tabindex="-1" href="#">Notícia 1</a></li>
+                <li><a tabindex="-1" href="#">Notícia 2</a></li>
+                <li><a tabindex="-1" href="#">Notícia 3</a></li>
+                <li><a tabindex="-1" href="#">Notícia 4</a></li>
+            </ul>
+        </div>
+    </div>     
+</div>
 {% endblock %}
 
