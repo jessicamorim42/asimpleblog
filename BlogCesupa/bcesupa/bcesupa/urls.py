@@ -19,5 +19,7 @@ from mainsite import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include('mainsite.urls')),
-    url(r'^contato/$', views.contactPage, name='contactpage'),
+    url(r'^contato/$', views.contactpage, name='contactpage'),
+    url(r'^noticias/$', views.newspage, name='newspage'),
+	url(r'^projetos$', views.projectspage, name='projects'),
 ]
