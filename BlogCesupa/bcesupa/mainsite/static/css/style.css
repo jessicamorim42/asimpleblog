@@ -75,7 +75,7 @@ p{
     font-size: 16px;
 }
 
-h3{
+h2, h3{
     border-bottom: 2px solid  #ededed !important; 
     color: #3a6d99;
 }
@@ -90,7 +90,8 @@ h3{
 }
 
 footer p{
-    margin-top: 10px;
+    padding-top: 15px;
+    margin: -10px;
 }
 
 nav .dropdown-menu{
@@ -105,23 +106,24 @@ nav .dropdown-menu{
     margin-bottom: 0px;
 }
 
-#posts{
+#recentes{
     position: relative;
     display: block;
     color: #3a6d99;
     background-color: #fff;
     padding: 20px;
     margin: 20px;
-    width: 250px;
+    width: 300px;
     height: 300px;
 }
 
-#posts.dropdown-menu li a:hover{
+#recentes.dropdown-menu li a:hover, #recentes.dropdown-menu li a:focus{
         background-color: #3a6d99;
         color: #fff;
 }
 
-#btnEnviar{
+.btnSubmit{
     background-color: #3a6d99;
     color: #fff;
 }
+
