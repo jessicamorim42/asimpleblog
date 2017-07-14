@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="pt-br">  
+
+    <head>  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Instructables Fake</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/style.css" rel="stylesheet">
+    </head>
+    <body>  
+        <header class="block-header">
+            <div>   
+                 <a href="#"><img src="/static/imgs/logo-robot.ico" alt="logo"></a>
+            </div>
+        <nav class="navbar">
+            <div class="container-fluid container">   
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">    
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Pesquisar..." aria-describedby="search-addon">
+                            <span class="input-group-addon" id="search-addon"><a id="search" href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></span>
+                        </div>
+                    </form>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav" >
+                        <li class="active"><a href="http://127.0.0.1:8000/">Home</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" id="dropdownProject">
+                            Projetos<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownProject">    
+                                <li><a href="">Link 1</a></li>
+                                <li><a href="">Link 2</a></li>
+                                <li><a href="">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contato">Contato</a></li>
+                    </ul> 
+                </div>
+            </div> 
+        </nav>
+        </header>
+
+        <div id="main" class="container container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                   {% block content %}
+                   {% endblock %}   
+                </div>
+                <div class="col-md-4">
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" id="posts">
+                        <li class="text-center"><h3>Recentes</h3></li>
+                        <li><a tabindex="-1" href="#">Notícia 1</a></li>
+                        <li><a tabindex="-1" href="#">Notícia 2</a></li>
+                        <li><a tabindex="-1" href="#">Notícia 3</a></li>
+                        <li><a tabindex="-1" href="#">Notícia 4</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </div> 
+            <footer class="footer">  
+                <div class="container clearfix">
+                    <p class="text-center">
+                        Feito com <i class="fa fa-heart" aria-hidden="true"></i> e muita paciência pra aguentar o Roger.
+                    </p>
+                </div>  
+            </footer>
+
+        <!--scripts-->
+        <script src="/static/js/jquery-3.2.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+    </body>
+</html>
