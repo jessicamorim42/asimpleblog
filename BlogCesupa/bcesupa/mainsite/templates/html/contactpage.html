@@ -1,39 +1,32 @@
-
-
-{% extends 'index.html' %}
-
-
-
-{% block content %}
-            <div class='row'>
-                <div class='div clss col-md-6'>
-
-                    <h2 class="page-header"><b>Contato</b></h2>
-                        <p class="text-justify">
-                        	<div class='row'>
-                            	<h4> <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <b>Email</b>  <li><a href="#">someshit@email.com</a></li></h4> 
-                            </div>
-
-                            <div class='row'>
-                        		<h4><i class="fa fa-telegram" aria-hidden="true"></i> <b>Telegram</b> <li><a href="#">telegram.me/someshit</a></li></h4>
-                        	</div>
-                        </p>
-
-                     <div class='row'>
-                     		
-                     		<label for="usr">Nome:</label>
-                     		<input type="comment" class="form-control" id="usr">
-                     		<label for="comment">Mensagem:</label>
-      						<textarea class="form-control" rows="5" id="comment"></textarea>
-                     </div>
-
-                     <div class="row">
-                		<button type="Enviar" class="btn btn-primary btn-sm">Submit</button>
-            		 </div>
-                </div>
-            </div>
-
+{% extends 'index.html' %} {% block content %}
+<div class='row'>
+    <div class='div clss col-md-6'>
+        <h2 class="page-header"><b>Contato</b></h2>
+        <p class="text-justify"></p>
+        <div class='row'>
+            <h4><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i> <b>Email</b></h4>
+            <ul>
+                <li>
+                    <a href="#">someshit@email.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class='row'>
+            <h4><i aria-hidden="true" class="fa fa-telegram"></i> <b>Telegram</b></h4>
+            <ul>
+                <li>
+                    <a href="#">telegram.me/someshit</a>
+                </li>
+            </ul>
+        </div>
+        <p></p>
+        <div class='row'>
+            <label for="usr">Nome</label> <input class="form-control" id="usr" type="comment"> <label for="comment">Mensagem</label> 
+            <textarea class="form-control" id="comment" rows="5"></textarea>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary btn-sm" type="enviar">Submit</button>
+        </div>
+    </div>
+</div>
 {% endblock %}
-
-
-
